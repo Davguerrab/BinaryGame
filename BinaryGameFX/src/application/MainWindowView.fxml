@@ -13,18 +13,14 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="fondo" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="750.0" prefWidth="1110.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainWindowController">
+<VBox fx:id="fondo" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="INHERIT" prefHeight="750.0" prefWidth="1110.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainWindowController">
    <children>
-      <HBox prefHeight="100.0" prefWidth="200.0">
-         <children>
-            <Label fx:id="result" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="1110.0" text="Bienvenido" textFill="WHITE">
-               <font>
-                  <Font name="Intel Clear Bold" size="46.0" />
-               </font>
-            </Label>
-         </children>
-      </HBox>
-      <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <Label fx:id="result" alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="1110.0" text="Bienvenido" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Intel Clear Bold" size="46.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
          <children>
             <Label alignment="CENTER" prefHeight="97.0" prefWidth="150.0" text="64" textAlignment="CENTER" textFill="WHITE">
                <font>
@@ -63,7 +59,7 @@
             </Label>
          </children>
       </HBox>
-      <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
          <children>
             <Label alignment="CENTER" prefHeight="97.0" prefWidth="150.0" text="2^6" textAlignment="CENTER" textFill="WHITE">
                <font>
@@ -102,12 +98,12 @@
             </Label>
          </children>
       </HBox>
-      <Label fx:id="SumOf" prefHeight="150.0" prefWidth="1110.0" textFill="WHITE">
+      <Label fx:id="SumOf" alignment="CENTER" contentDisplay="CENTER" prefHeight="110.0" prefWidth="1110.0" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Intel Clear Bold" size="40.0" />
          </font>
       </Label>
-      <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
          <VBox.margin>
             <Insets />
          </VBox.margin>
@@ -194,7 +190,46 @@
             </GridPane>
          </children>
       </HBox>
-      <HBox prefHeight="320.0" prefWidth="600.0" spacing="10.0">
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label fx:id="label64" alignment="CENTER" prefHeight="85.0" prefWidth="150.0" textFill="WHITE">
+               <font>
+                  <Font name="Intel Clear" size="38.0" />
+               </font>
+            </Label>
+            <Label fx:id="label32" alignment="CENTER" prefHeight="85.0" prefWidth="150.0" textFill="WHITE">
+               <font>
+                  <Font name="Intel Clear" size="38.0" />
+               </font>
+            </Label>
+            <Label fx:id="label16" alignment="CENTER" prefHeight="85.0" prefWidth="150.0" textFill="WHITE">
+               <font>
+                  <Font name="Intel Clear" size="38.0" />
+               </font>
+            </Label>
+            <Label fx:id="label8" alignment="CENTER" prefHeight="85.0" prefWidth="150.0" textFill="WHITE">
+               <font>
+                  <Font name="Intel Clear" size="38.0" />
+               </font>
+            </Label>
+            <Label fx:id="label4" alignment="CENTER" prefHeight="85.0" prefWidth="150.0" textFill="WHITE">
+               <font>
+                  <Font name="Intel Clear" size="38.0" />
+               </font>
+            </Label>
+            <Label fx:id="label2" alignment="CENTER" prefHeight="85.0" prefWidth="150.0" textFill="WHITE">
+               <font>
+                  <Font name="Intel Clear" size="38.0" />
+               </font>
+            </Label>
+            <Label fx:id="label1" alignment="CENTER" prefHeight="85.0" prefWidth="150.0" textFill="WHITE">
+               <font>
+                  <Font name="Intel Clear" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="320.0" prefWidth="600.0" spacing="10.0">
          <children>
             <GridPane prefWidth="150.0">
                <columnConstraints>

@@ -16,8 +16,9 @@ import javafx.scene.shape.Circle;
 
 public class MainWindowController {
 
-	@FXML
-	private Label result;
+
+
+	@FXML private Label result;
 	@FXML private Label SumOf;
 	private int[] Potencia64 = {64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99};
 	private int[] Potencia32 = {32,33,	34,	35,	36,37,	38,	39,	40,	41,42,	43,	44,	45,	46,47,	48,	49,	50,	51,52,	53,	54,	55,	56,57,	58,	59,	60,	61,62,	63,	96,	97,	98,99};
@@ -34,9 +35,18 @@ public class MainWindowController {
 	@FXML private Circle circle4 = new Circle();
 	@FXML private Circle circle2 = new Circle();
 	@FXML private Circle circle1 = new Circle();
+
+	@FXML private Label label64 = new Label();
+	@FXML private Label label32 = new Label();
+	@FXML private Label label16 = new Label();
+	@FXML private Label label8 = new Label();
+	@FXML private Label label4 = new Label();
+	@FXML private Label label2 = new Label();
+	@FXML private Label label1 = new Label();
+
 	
 
-	 Stop[] stops = new Stop[] { new Stop(0, Color.DIMGRAY), new Stop(1, Color.GAINSBORO)};
+	 Stop[] stops = new Stop[] { new Stop(0, Color.FIREBRICK), new Stop(1, Color.RED)};
      LinearGradient lg1 = new LinearGradient(0, 0, 1, 0, true, CycleMethod.NO_CYCLE, stops);
      
      Color c = Color.web("0x007fbd",1.0);
@@ -54,6 +64,13 @@ public class MainWindowController {
 		circle2.setFill(lg1);
 		circle1.setFill(lg1);
 		SumOf.setText("");
+		label64.setText("0");
+		label32.setText("0");
+		label16.setText("0");
+		label8.setText("0");
+		label4.setText("0");
+		label2.setText("0");
+		label1.setText("0");
 	}
 
 	@FXML
@@ -68,73 +85,74 @@ public class MainWindowController {
 		boolean flag = true;
 		//If statements to activate the circles
 		if(ArrayUtils.contains(Potencia64,number)){
+			label64.setText("1");
 			circle64.setFill(lg2);
 			SumOfStr += ("64");
 			flag = false;
 		}
 		if(ArrayUtils.contains(Potencia32,number)){
+			label32.setText("1");
+			circle32.setFill(lg2);
 			if(flag){
-				circle32.setFill(lg2);
 				SumOfStr += ("32");
 				flag = false;
 			}	
 			else{
-				circle32.setFill(lg2);
 				SumOfStr += ("+32");
 			}
 		}
 		if(ArrayUtils.contains(Potencia16,number)){
+			label16.setText("1");
+			circle16.setFill(lg2);
 			if(flag){
-				circle16.setFill(lg2);
 				SumOfStr += ("16");
 				flag = false;
 			}
 			else{
-				circle16.setFill(lg2);
 				SumOfStr += ("+16");
 			}
 		}
 		if(ArrayUtils.contains(Potencia8,number)){
+			label8.setText("1");
+			circle8.setFill(lg2);
 			if(flag){
-				circle8.setFill(lg2);
 				SumOfStr += ("8");
 				flag = false;
 			}
 			else{
-				circle8.setFill(lg2);
 				SumOfStr += ("+8");
 			}
 		}
 		if(ArrayUtils.contains(Potencia4,number)){
+			label4.setText("1");
+			circle4.setFill(lg2);
 			if(flag){
-				circle4.setFill(lg2);
 				SumOfStr += ("4");
 				flag = false;
 			}
 			else{
-				circle4.setFill(lg2);
 				SumOfStr += ("+4");
 			}
 		}
 		if(ArrayUtils.contains(Potencia2,number)){
+			label2.setText("1");
+			circle2.setFill(lg2);
 			if(flag){
-				circle2.setFill(lg2);
 				SumOfStr += ("2");
 				flag = false;
 			}
 			else{
-				circle2.setFill(lg2);
 				SumOfStr += ("+2");
 			}
 		}
 		if(ArrayUtils.contains(Potencia1,number)){
+			label1.setText("1");
+			circle1.setFill(lg2);
 			if(flag){
-				circle1.setFill(lg2);
 				SumOfStr += ("1");
 				flag = false;
 			}
 			else{
-				circle1.setFill(lg2);
 				SumOfStr += ("+1");
 			}
 		}
